@@ -10,10 +10,18 @@
 <body>
 
     <h1> Forum Registratie</h1>
+    <?php
+    foreach ($_POST['username'] as $username) {
+        echo 'Jouw username is ' . $username . '<br>';
+        foreach ($_POST['email'] as $email) {
+            echo 'Jouw email is ' . $email . '<br>';
+            foreach ($_POST['age'] as $age) {
+                echo 'Jouw age is ' . $age . ' <br>';
+            }
+        }
+    }
+    ?>
 
-    Jouw username is <?php echo $_POST["username"]; ?> <br>
-    Jouw email is <?php echo $_POST["email"]; ?><br>
-    Jouw age is <?php echo $_POST["age"]; ?><br>
 </body>
 
 </html>
