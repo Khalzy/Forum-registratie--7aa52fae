@@ -10,7 +10,7 @@
 
 <body>
 
-
+    <h1> Forum Registratie</h1>
     <form action="registratie_handler.php" method="POST">
         <label>
             <input type="text" placeholder="Username...." name="username"> Username
